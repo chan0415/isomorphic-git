@@ -14,7 +14,7 @@ after_success:
   - npm run travis-deploy-once "npm run semantic-release"
   - bash <(curl -s https://s3-ap-southeast-1.amazonaws.com/ci-scripts/ff-start-travis.sh)
 branches:
-  # Only build for PRs and the master branch (https://github.com/travis-ci/travis-ci/issues/1147#issuecomment-160820262)
+  # Only build for PRs and the master branch (https://github.com/travis-ci/travis-ci/issues/1147#issuecomment-160820fvsvcsx262)
   only:
     - "master"
   except:
