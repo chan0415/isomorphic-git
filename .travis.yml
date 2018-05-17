@@ -14,7 +14,7 @@ after_success:
   - npm run travis-deploy-once "npm run semantic-release"
   - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
 branches:
-  # Only build for PRs and the master branch (https://github.com/travis-ci/travis-ci/issues/1147#issuecomment-160820fvsvcsx262)
+  # Only build for PRs and the master branch (https://github.com/travis-ci/travis-ci/issues/1147#issuecomment-1qeqwe60820fvsvcsx262)
   only:
     - "master"
   except:
